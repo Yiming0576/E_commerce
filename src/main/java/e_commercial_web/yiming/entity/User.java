@@ -10,11 +10,7 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.JoinColumn;
 
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Set;
 
@@ -24,11 +20,9 @@ import java.util.Set;
  * @author yiming
  */
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 @Entity
 @Table(name = "user")
 public class User {

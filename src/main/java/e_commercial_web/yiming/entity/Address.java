@@ -8,11 +8,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.OneToOne;
 
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 /**
@@ -20,11 +16,9 @@ import lombok.Setter;
  */
 @Entity
 @Table
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class Address {
 
     @Id
